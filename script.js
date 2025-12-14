@@ -1,7 +1,18 @@
 const burger = document.querySelector('.header_top--burger');
-  const mobileMenu = document.querySelector('.mobile-menu');
+const menu = document.querySelector('.mobile_menu');
+const closeBtn = document.querySelector('.mobile_menu--close');
 
-  burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
-    mobileMenu.classList.toggle('active');
-  });
+burger.addEventListener('click', () => {
+    menu.classList.add('active');
+});
+
+closeBtn.addEventListener('click', () => {
+    menu.classList.remove('active');
+});
+
+// Закрытие при клике вне меню
+menu.addEventListener('click', (e) => {
+    if (e.target === menu) {
+        menu.classList.remove('active');
+    }
+});
