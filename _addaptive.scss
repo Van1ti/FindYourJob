@@ -75,7 +75,7 @@
 
       &--text {
         width: 290px;
-        
+
       }
 
       &--box {
@@ -94,5 +94,35 @@
         }
       }
     }
+  }
+
+  .mobile-menu {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background: #F2F3F6;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 100;
+  }
+
+  .mobile-menu.active {
+    transform: translateX(0);
+  }
+
+  .header_top--burger--close {
+    display: none;
+  }
+
+  .header_top--burger.active img:first-child {
+    display: none;
+  }
+
+  .header_top--burger.active .header_top--burger--close {
+    display: block;
   }
 }
