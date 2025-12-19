@@ -36,49 +36,53 @@
     }
   }
 
-  .categories {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    &_container {
-      flex-direction: column;
-    }
-  }
-
-  .vacancies {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &_box {
+  main {
+    .categories {
       display: flex;
       flex-direction: column;
       align-items: center;
 
-      &--img {
-        margin-top: 30px;
-        margin-bottom: 30px;
+      &_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
       }
+    }
 
-      &--info {
-        margin-bottom: 30px;
-        text-align: center;
-      }
+    .vacancies {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-      &--btn {
-        margin-bottom: 30px;
-      }
-
-      &--requirements {
+      &_box {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
-        margin-bottom: 30px;
+
+        &--img {
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+
+        &--info {
+          margin-bottom: 30px;
+          text-align: center;
+        }
+
+        &--btn {
+          margin-bottom: 30px;
+        }
+
+        &--requirements {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 15px;
+          margin-bottom: 30px;
+        }
       }
     }
   }
+
 }
 
 /* Адаптив для мобильных */

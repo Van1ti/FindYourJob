@@ -523,36 +523,37 @@ main .subscribe_container--box--btn--text {
   .header_container--content--recomend--ex {
     margin-top: 10px;
   }
-  .categories {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .categories_container {
-    flex-direction: column;
-  }
-  .vacancies {
+  main .categories {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .vacancies_box {
+  main .categories_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  main .vacancies {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .vacancies_box--img {
+  main .vacancies_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .vacancies_box--img {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .vacancies_box--info {
+  main .vacancies_box--info {
     margin-bottom: 30px;
     text-align: center;
   }
-  .vacancies_box--btn {
+  main .vacancies_box--btn {
     margin-bottom: 30px;
   }
-  .vacancies_box--requirements {
+  main .vacancies_box--requirements {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -588,4 +589,10 @@ main .subscribe_container--box--btn--text {
   .header_container--content--box--btn--text {
     display: none;
   }
+}
+.footer {
+  width: 100%;
+  max-width: 1064px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
