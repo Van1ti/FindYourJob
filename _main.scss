@@ -91,106 +91,141 @@
              margin-bottom: 40px;
          }
 
-         &_box {
+         &_container {
              background-color: #FFFFFF;
-             display: flex;
-             justify-content: space-between;
-             align-items: center;
-             border: 1px solid #C5C9D4;
-             border-radius: 5px;
-             padding: 30px 55px 30px 30px;
-             margin-bottom: 20px;
 
-             &--img {
-                 background-color: #FFFFFF;
-             }
-
-             &--info {
-                 background-color: #FFFFFF;
-
-                 &--p {
-                     background-color: #FFFFFF;
-                     font-family: Fira Sans;
-                     font-weight: 700;
-                     font-size: 16px;
-                     line-height: 100%;
-                     letter-spacing: 0%;
-                     color: #111238;
-                     margin-bottom: 10px;
-                 }
-
-                 &--location {
-                     background-color: #FFFFFF;
-                     font-family: Fira Sans;
-                     font-weight: 400;
-                     font-size: 14px;
-                     line-height: 100%;
-                     letter-spacing: 0%;
-                     color: #111238;
-                 }
-             }
-
-             &--btn {
-                 font-family: Fira Sans;
-                 font-weight: 700;
-                 font-size: 16px;
-                 line-height: 100%;
-                 letter-spacing: 0%;
-                 text-align: center;
-                 background-color: #1A75E8;
-                 color: #FFFFFF;
-                 cursor: pointer;
-                 padding: 10px 25px 10px 25px;
-                 border: none;
-                 border-radius: 5px;
-             }
-
-             &--requirements {
+             &--box {
+                
                  display: flex;
-                 gap: 15px;
+                 justify-content: space-between;
                  align-items: center;
                  background-color: #FFFFFF;
+                 border: 1px solid #C5C9D4;
+                 border-radius: 5px;
+                 padding: 30px 55px 30px 55px;
+                 margin-bottom: 20px;
 
-
-                 &--title {
+                 &--btn {
+                     background-color: #FFFFFF;
                      font-family: Fira Sans;
                      font-weight: 400;
                      font-size: 14px;
                      line-height: 100%;
                      letter-spacing: 0%;
-                     color: #B2B2B2;
-                     background-color: #FFFFFF;
+                     color: #1A75E8;
+                     border: none;
+                     cursor: pointer;
                  }
 
-                 &--box {
+                 &--info {
+                     width: 100%;
+                     max-width: 795px;
                      display: flex;
-                     gap: 10px;
+                     justify-content: space-between;
                      align-items: center;
                      background-color: #FFFFFF;
 
-                     &--p {
-                         font-family: Fira Sans;
-                         font-weight: 400;
-                         font-size: 14px;
-                         line-height: 100%;
-                         letter-spacing: 0%;
-                         color: #B2B2B2;
-                         padding: 5px 10px 5px 10px;
-                         border: 1px solid #B2B2B2;
+                     &--requirements {
+                        width: 100%;
+                        max-width: 281px;
+                         display: flex;
+                         justify-content: space-between;
+                         align-items: center;
                          background-color: #FFFFFF;
-                         border-radius: 5px;
+
+                         &--h {
+                             background-color: #FFFFFF;
+                             font-family: Fira Sans;
+                             font-weight: 400;
+                             font-size: 14px;
+                             line-height: 100%;
+                             letter-spacing: 0%;
+                             color: #B2B2B2;
+                         }
+
+                         &--types {
+                             display: flex;
+                             gap: 10px;
+                             align-items: center;
+                             background-color: #FFFFFF;
+
+                             &--p {
+                                 font-family: Fira Sans;
+                                 font-weight: 400;
+                                 font-size: 14px;
+                                 line-height: 100%;
+                                 letter-spacing: 0%;
+                                 background-color: #FFFFFF;
+                                 color: #B2B2B2;
+                                 border: 1px solid #B2B2B2;
+                                 border-radius: 5px;
+                                 padding: 5px 10px 5px 10px;
+                             }
+                         }
+                     }
+
+                     &--content {
+                        width: 100%;
+                        max-width: 452px;
+                         display: flex;
+                         justify-content: space-between;
+                         align-items: center;
+                         background-color: #FFFFFF;
+
+                         &--btn {
+                             font-family: Fira Sans;
+                             font-weight: 700;
+                             font-size: 16px;
+                             line-height: 100%;
+                             letter-spacing: 0%;
+                             text-align: center;
+                             background-color: #1A75E8;
+                             border: none;
+                             border-radius: 5px;
+                             color: #FFFFFF;
+                             padding: 10px 25px 10px 25px;
+                             cursor: pointer;
+                         }
+
+                         &--box {
+                            width: 100%;
+                            max-width: 293px;
+                             display: flex;
+                             justify-content: space-between;
+                             align-items: center;
+                             background-color: #FFFFFF;
+
+                             img {
+                                 background-color: #FFFFFF;
+                             }
+
+                             &--job {
+                                 background-color: #FFFFFF;
+
+                                 &--p {
+                                     background-color: #FFFFFF;
+                                     font-family: Fira Sans;
+                                     font-weight: 700;
+                                     font-size: 16px;
+                                     line-height: 100%;
+                                     letter-spacing: 0%;
+                                     color: #111238;
+                                 }
+
+                                 &--loc {
+                                     background-color: #FFFFFF;
+                                     font-family: Fira Sans;
+                                     font-weight: 400;
+                                     font-size: 14px;
+                                     line-height: 100%;
+                                     letter-spacing: 0%;
+                                     color: #111238;
+                                     margin-top: 10px;
+                                 }
+                             }
+                         }
                      }
                  }
-             }
-
-             &--more {
-                 font-family: Fira Sans;
-                 font-weight: 400;
-                 font-size: 14px;
-                 line-height: 100%;
-                 letter-spacing: 0%;
-                 color: #1A75E8;
-                 background-color: #FFFFFF;
              }
          }
 

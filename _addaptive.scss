@@ -1,3 +1,13 @@
+@media (max-width:1250px) {
+  main {
+    .vacancies {
+      &_container--box--info {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
 /* Styles for tablets */
 @media (max-width:1050px) {
   .header {
@@ -48,32 +58,6 @@
       }
     }
 
-    .vacancies {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      &_box {
-        flex-wrap: wrap;
-        gap: 20px;
-        padding: 25px;
-
-        &--btn {
-          order: 3;
-        }
-
-        &--requirements {
-          order: 4;
-          width: 100%;
-          margin: 0 auto;
-        }
-
-        &--more {
-          order: 5;
-          margin: 0 auto;
-        }
-      }
-    }
   }
 
 }
@@ -126,44 +110,22 @@
     }
   }
 
-  .categories {
-    &_container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+  main {
+    .categories {
+      &_container {
+        grid-template-columns: 1fr;
+      }
     }
-  }
 
-  .vacancies {
-    &_box {
-      width: 290px;
-      flex-direction: column;
-      align-items: center;
+    .vacancies {}
 
-      &--info {
+    .subscribe {
+      &_container {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
-
-      &--btn {
-        text-align: center;
-      }
-
-      &--requirements {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-
-        &--box {
-          flex-wrap: wrap;
-        }
-      }
-
-      &--more {
-        align-self: flex-end;
-      }
     }
-
   }
+
 }
