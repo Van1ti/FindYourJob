@@ -523,7 +523,10 @@ main .subscribe_container--box--btn--text {
   background-color: #1A75E8;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1230px) {
+  main .vacancies_container--box {
+    width: 700px;
+  }
   main .vacancies_container--box--info {
     flex-direction: column;
   }
