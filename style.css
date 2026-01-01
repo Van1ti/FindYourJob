@@ -4,42 +4,48 @@
   margin: 0;
   padding: 0;
   border: border-box;
-  background-color: #F2F3F6;
 }
 
 .header {
+  background-color: #F2F3F6;
+  /* ---------------- MOBILE MENU ---------------- */
+}
+.header_container {
   width: 100%;
   max-width: 1145px;
   margin: 0 auto;
-  /* ---------------- MOBILE MENU ---------------- */
+  background-color: #F2F3F6;
 }
-.header_top {
+.header_container--top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 44px;
   padding-bottom: 75px;
+  background-color: #F2F3F6;
 }
-.header_top--nav {
+.header_container--top--nav {
   display: flex;
   gap: 20px;
   align-items: center;
+  background-color: #F2F3F6;
 }
-.header_top--nav--link {
+.header_container--top--nav--link {
   font-family: Fira Sans;
   font-size: 16px;
   color: #111238;
   text-decoration: none;
+  background-color: #F2F3F6;
 }
-.header_top--nav--link:hover {
+.header_container--top--nav--link:hover {
   color: #1A75E8;
 }
-.header_top--btns {
+.header_container--top--btns {
   display: flex;
   gap: 40px;
   align-items: center;
 }
-.header_top--btns--btn {
+.header_container--top--btns--btn {
   font-family: Fira Sans;
   font-size: 16px;
   color: #111238;
@@ -47,7 +53,7 @@
   background-color: #F2F3F6;
   cursor: pointer;
 }
-.header_top--btns--btn--scn {
+.header_container--top--btns--btn--scn {
   font-family: Fira Sans;
   font-size: 16px;
   color: #FFFFFF;
@@ -57,16 +63,16 @@
   border: #1A75E8;
   cursor: pointer;
 }
-.header_top--burger {
+.header_container--top--burger {
   display: none;
   /* Скрыто на десктопе */
   cursor: pointer;
 }
-.header_top--burger img {
+.header_container--top--burger img {
   width: 30px;
   height: 30px;
 }
-.header_top--img {
+.header_container--top--img {
   max-height: 50px;
 }
 .header .mobile_menu {
@@ -127,17 +133,18 @@
   background-color: #111238;
   color: #fff;
 }
-.header_container {
+.header_find--container {
   width: 100%;
   max-width: 1145px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
-.header_container--content {
+.header_find--container--content {
   width: 460px;
 }
-.header_container--content--title {
+.header_find--container--content--title {
   font-family: Fira Sans;
   font-weight: 900;
   font-size: 44px;
@@ -146,7 +153,7 @@
   color: #111238;
   margin-bottom: 15px;
 }
-.header_container--content--text {
+.header_find--container--content--text {
   width: 100%;
   max-width: 460px;
   font-family: Fira Sans;
@@ -157,7 +164,7 @@
   color: #111238;
   margin-bottom: 30px;
 }
-.header_container--content--box {
+.header_find--container--content--box {
   width: 447px;
   display: flex;
   justify-content: space-between;
@@ -168,7 +175,7 @@
   padding: 10px 10px 10px 25px;
   margin-bottom: 25px;
 }
-.header_container--content--box--input {
+.header_find--container--content--box--input {
   font-family: Fira Sans;
   font-weight: 400;
   font-size: 16px;
@@ -178,7 +185,7 @@
   background-color: #FFFFFF;
   border: none;
 }
-.header_container--content--box--btn {
+.header_find--container--content--box--btn {
   width: 211px;
   gap: 10px;
   display: flex;
@@ -189,10 +196,10 @@
   cursor: pointer;
   padding: 15px 30px 15px 30px;
 }
-.header_container--content--box--btn--img {
+.header_find--container--content--box--btn--img {
   background-color: #1A75E8;
 }
-.header_container--content--box--btn--text {
+.header_find--container--content--box--btn--text {
   width: 126px;
   font-family: Fira Sans;
   font-weight: 400;
@@ -202,13 +209,13 @@
   color: #FFFFFF;
   background-color: #1A75E8;
 }
-.header_container--content--recomend {
+.header_find--container--content--recomend {
   width: 345px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header_container--content--recomend--title--1 {
+.header_find--container--content--recomend--title--1 {
   font-family: Fira Sans;
   font-weight: 400;
   font-size: 14px;
@@ -216,13 +223,13 @@
   letter-spacing: 0%;
   color: #B2B2B2;
 }
-.header_container--content--recomend--ex {
+.header_find--container--content--recomend--ex {
   width: 259px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.header_container--content--recomend--ex--title {
+.header_find--container--content--recomend--ex--title {
   font-family: Fira Sans;
   font-weight: 400;
   font-size: 14px;
@@ -453,10 +460,15 @@ main .vacancies_btn {
   margin: 40px auto 80px;
   display: block;
 }
+main .subscribe {
+  background-color: #F2F3F6;
+  padding-bottom: 90px;
+}
 main .subscribe_container {
   width: 100%;
   max-width: 460px;
   margin: 0 auto;
+  background-color: #F2F3F6;
 }
 main .subscribe_container--title {
   font-family: Fira Sans;
@@ -465,6 +477,7 @@ main .subscribe_container--title {
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
+  background-color: #F2F3F6;
   color: #111238;
   padding-top: 90px;
   margin-bottom: 20px;
@@ -478,6 +491,7 @@ main .subscribe_container--text {
   text-align: center;
   color: #111238;
   margin-bottom: 40px;
+  background-color: #F2F3F6;
 }
 main .subscribe_container--box {
   width: 447px;
@@ -488,7 +502,6 @@ main .subscribe_container--box {
   align-items: center;
   padding: 11px 10px 10px 25px;
   border-radius: 5px;
-  margin-bottom: 90px;
 }
 main .subscribe_container--box--input {
   font-family: Fira Sans;
@@ -526,9 +539,22 @@ main .subscribe_container--box--btn--text {
 @media (max-width: 1230px) {
   main .vacancies_container--box {
     width: 700px;
+    padding: 20px;
+    padding-right: 30px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
   main .vacancies_container--box--info {
     flex-direction: column;
+  }
+  .footer_container {
+    flex-direction: column;
+  }
+  .footer_container--box {
+    margin: 0 auto;
+  }
+  .footer_container--row {
+    margin: 0 auto;
   }
 }
 /* Styles for tablets */
@@ -569,6 +595,9 @@ main .subscribe_container--box--btn--text {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .footer_container--row {
+    width: 500px;
+  }
 }
 /* Адаптив для мобильных */
 @media (max-width: 768px) {
@@ -601,10 +630,68 @@ main .subscribe_container--box--btn--text {
   main .categories_container {
     grid-template-columns: 1fr;
   }
+  main .vacancies_title {
+    text-align: center;
+  }
+  main .vacancies_container--box {
+    width: 100%;
+    max-width: 290px;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  main .vacancies_container--box--info {
+    flex-direction: column;
+    gap: 30px;
+  }
+  main .vacancies_container--box--info--requirements {
+    flex-direction: column;
+    gap: 15px;
+  }
+  main .vacancies_container--box--info--content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  main .vacancies_container--box--info--content--box {
+    flex-direction: column;
+    gap: 30px;
+  }
+  main .vacancies_container--box--info--content--box--job {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   main .subscribe_container {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  main .subscribe_container--title {
+    font-family: Fira Sans;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 290px;
+  }
+  main .subscribe_container--text {
+    font-family: Fira Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 290px;
+  }
+  main .subscribe_container--box {
+    width: 100%;
+    max-width: 290px;
+  }
+  main .subscribe_container--box--btn--text {
+    display: none;
   }
 }
 .footer {
@@ -612,4 +699,74 @@ main .subscribe_container--box--btn--text {
   max-width: 1064px;
   margin: 0 auto;
   background-color: #FFFFFF;
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+.footer_container {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_container--box {
+  background-color: #FFFFFF;
+}
+.footer_container--box--img {
+  background-color: #FFFFFF;
+  margin-bottom: 33px;
+  margin-top: 79px;
+}
+.footer_container--box--text {
+  background-color: #FFFFFF;
+  font-family: Fira Sans;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #B2B2B2;
+  width: 166px;
+}
+.footer_container--box--date {
+  font-family: Fira Sans;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #B2B2B2;
+  background-color: #FFFFFF;
+  margin-top: -9px;
+}
+.footer_container--row {
+  width: 100%;
+  max-width: 810px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  padding-top: 32px;
+  padding-bottom: 28px;
+}
+.footer_container--row--box--h {
+  font-family: Fira Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #111238;
+  margin-bottom: 15px;
+}
+.footer_container--row--box--info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.footer_container--row--box--info--a {
+  font-family: Fira Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #111238;
+  text-decoration: none;
+}
+.footer_container--row--box--info--a:hover {
+  color: #1A75E8;
 }/*# sourceMappingURL=style.css.map */

@@ -95,7 +95,7 @@
              background-color: #FFFFFF;
 
              &--box {
-                
+
                  display: flex;
                  justify-content: space-between;
                  align-items: center;
@@ -126,8 +126,8 @@
                      background-color: #FFFFFF;
 
                      &--requirements {
-                        width: 100%;
-                        max-width: 281px;
+                         width: 100%;
+                         max-width: 281px;
                          display: flex;
                          justify-content: space-between;
                          align-items: center;
@@ -165,8 +165,8 @@
                      }
 
                      &--content {
-                        width: 100%;
-                        max-width: 452px;
+                         width: 100%;
+                         max-width: 452px;
                          display: flex;
                          justify-content: space-between;
                          align-items: center;
@@ -188,8 +188,8 @@
                          }
 
                          &--box {
-                            width: 100%;
-                            max-width: 293px;
+                             width: 100%;
+                             max-width: 293px;
                              display: flex;
                              justify-content: space-between;
                              align-items: center;
@@ -247,10 +247,14 @@
      }
 
      .subscribe {
+         background-color: #F2F3F6;
+         padding-bottom: 90px;
+
          &_container {
              width: 100%;
              max-width: 460px;
              margin: 0 auto;
+             background-color: #F2F3F6;
 
              &--title {
                  font-family: Fira Sans;
@@ -259,6 +263,7 @@
                  line-height: 100%;
                  letter-spacing: 0%;
                  text-align: center;
+                 background-color: #F2F3F6;
                  color: #111238;
                  padding-top: 90px;
                  margin-bottom: 20px;
@@ -273,6 +278,7 @@
                  text-align: center;
                  color: #111238;
                  margin-bottom: 40px;
+                 background-color: #F2F3F6;
              }
 
              &--box {
@@ -284,7 +290,7 @@
                  align-items: center;
                  padding: 11px 10px 10px 25px;
                  border-radius: 5px;
-                 margin-bottom: 90px;
+
 
                  &--input {
                      font-family: Fira Sans;

@@ -1,6 +1,89 @@
-.footer{
+.footer {
     width: 100%;
     max-width: 1064px;
     margin: 0 auto;
     background-color: #FFFFFF;
+    padding-top: 32px;
+    padding-bottom: 64px;
+
+    &_container {
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+
+        &--box {
+            background-color: #FFFFFF;
+
+            &--img {
+                background-color: #FFFFFF;
+                margin-bottom: 33px;
+                margin-top: 79px;
+            }
+
+            &--text {
+                background-color: #FFFFFF;
+                font-family: Fira Sans;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 140%;
+                letter-spacing: 0%;
+                color: #B2B2B2;
+                width: 166px;
+            }
+
+            &--date {
+                font-family: Fira Sans;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 140%;
+                letter-spacing: 0%;
+                color: #B2B2B2;
+                background-color: #FFFFFF;
+                margin-top: -9px;
+            }
+        }
+
+        &--row {
+            width: 100%;
+            max-width: 810px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #FFFFFF;
+            padding-top: 32px;
+            padding-bottom: 28px;
+
+            &--box {
+
+                &--h {
+                    font-family: Fira Sans;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: #111238;
+                    margin-bottom: 15px;
+                }
+
+                &--info {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+
+                    &--a {
+                        font-family: Fira Sans;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        color: #111238;
+                        text-decoration: none;
+                    }
+
+                    &--a:hover{
+                        color: #1A75E8;
+                    }
+                }
+            }
+        }
+    }
 }
